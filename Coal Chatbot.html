@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            width: 350px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .chat-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .chat {
+            height: 300px;
+            overflow-y: scroll;
+            padding: 10px;
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        #user-input {
+            flex: 1;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #send-button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .user-bubble {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 10px;
+            margin: 5px 0;
+            max-width: 70%;
+        }
+
+        .bot-bubble {
+            background-color: #f2f2f2;
+            color: #333;
+            padding: 8px 12px;
+            border-radius: 10px;
+            margin: 5px 0;
+            max-width: 70%;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Chatbot</h1>
+        <div class="chat" id="chat"></div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+          
+    </div>
+
+    <script>
+        const chat = document.getElementById('chat');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+
+        sendButton.addEventListener('click', function () {
+            const userMessage = userInput.value;
+            displayUserMessage(userMessage);
+            userInput.value = '';
+
+            // Simulate a response (you'd replace this with actual chatbot logic)
+            setTimeout(() => {
+                const answer = 'This is  a simple chatbot response.';
+                displayBotMessage(answer);
+            }, 1000);
+        });
+  // ye ek div create krke html ke under user ki query ko display krta hai
+        function displayUserMessage(message) {
+            const userdiv = document.createElement('div');
+            userdiv.classList.add('user-bubble');
+            userdiv.textContent = message;
+            chat.appendChild(userdiv);
+        }
+
+
+        // ye ...................................  ans ko display krta hai
+        function displayBotMessage(message) {
+            const ansdiv = document.createElement('div');
+            ansdiv.classList.add('bot-bubble');
+            ansdiv.textContent = message;
+            chat.appendChild(ansdiv);
+        }
+    </script>
+</body>
+</html> 
