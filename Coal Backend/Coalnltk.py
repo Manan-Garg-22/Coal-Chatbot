@@ -20,6 +20,3 @@ def bag_of_words(TokenizeSentence, AllWords):
             bag[i] = 1
     return bag
 
-#words=["Working","Works","Worked"]
-#stemmed_words=[stem(w) for w in words]
-#print("The Stemmed Words are :",stemmed_words)
