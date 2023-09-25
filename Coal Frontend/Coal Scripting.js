@@ -1,3 +1,8 @@
+function myFunction() { 
+  document.getElementById("waving-hand").style.display="none"; 
+  document.getElementById("chat-container").style.display="block"; 
+}
+
 let isWaving = true;
 
       function toggleWavingHand() {
@@ -13,6 +18,7 @@ let isWaving = true;
         }
 
         isWaving = !isWaving;
+        myFunction();
       }
 
         const chat = document.getElementById('chat');
