@@ -19,7 +19,7 @@ Stay tuned for updates on our progress as we strive to provide you with a soluti
 # Installations required
 1. Create Virtual Environment: python -m venv Env_Name
 2. Activation of Environment: For Mac/Linux: . Env_Name/bin/activate <br>
-                              For Windows: Env_Name\Scripts\activate
+                              &nbsp For Windows: Env_Name\Scripts\activate
 4. Libraries to install- pip install nltk
                        - pip3 install torch torchvision torchaudio (for Mac/Linux)
                        - pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117 (for Windows)
