@@ -1,9 +1,31 @@
 .header {
+    display: flex;
     background: linear-gradient(300deg, #00bfff, #ff4c68, #0f32cf);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
   }
 
+  .logo{
+    width: 30px;
+    height: 40px;
+    display:inline-block;
+    
+  }
+  
+  img{
+    max-width: 150%;  
+    height: auto;
+    
+  }
+  
+  .title{
+    font-family: "Monaco";
+    display:inline-block;
+    margin-left: 200px;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+  }
   @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
@@ -25,16 +47,17 @@
 
 
   .chat-container {
-    width: 100%;
+    width: 40%;
     max-width: 700px;
-    background-color: #c26cb6;
+    background-color: #ccc;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    border: 2px solid #007bff;
+    border: 2px solid #b8abbb;
     overflow: hidden;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
+
 
   .header {
     color: #fff;
@@ -162,28 +185,12 @@
         bottom: 20%; 
     }
     @keyframes waving-hand {
-        0% {
-            transform: rotate(0deg);
-        }
-        10% {
-            transform: rotate(14deg);
-        }
-        20% {
-            transform: rotate(-8deg);
-        }
-        30% {
-            transform: rotate(14deg);
-        }
-        40% {
-            transform: rotate(-4deg);
-        }
-        50% {
-            transform: rotate(10deg);
-        }
-        60% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
+        0% {transform: rotate(0deg);}
+        10% {transform: rotate(14deg);}
+        20% {transform: rotate(-8deg);}
+        30% {transform: rotate(14deg);}
+        40% {transform: rotate(-4deg);}
+        50% {transform: rotate(10deg);}
+        60% {transform: rotate(0deg);}
+        100% {transform: rotate(0deg);}
     }
