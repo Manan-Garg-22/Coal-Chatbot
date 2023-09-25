@@ -17,8 +17,9 @@ Stay tuned for updates on our progress as we strive to provide you with a soluti
 3.Making it open domain and more Intelligent so that it can respond with just some keywords required 
 
 # Installations required
-1. Create Virtual Environment- python -m venv Env_Name
-2. Activation of Environment- For Mac/Linux: . Env_Name/bin/activate  For Windows: Env_Name\Scripts\activate
-3. Libraries to install- pip install nltk
+1. Create Virtual Environment: python -m venv Env_Name
+2. Activation of Environment: For Mac/Linux: . Env_Name/bin/activate <br>
+                              For Windows: Env_Name\Scripts\activate
+4. Libraries to install- pip install nltk
                        - pip3 install torch torchvision torchaudio (for Mac/Linux)
                        - pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117 (for Windows)
